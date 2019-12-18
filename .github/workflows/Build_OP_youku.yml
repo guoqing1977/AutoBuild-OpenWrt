@@ -68,7 +68,7 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
-    - name: Configuration Customization - Build_x86_64
+    - name: Configuration Customization - Build_youku
       env:
         CONFIG_FILE: 'youku.config'
       run: |
