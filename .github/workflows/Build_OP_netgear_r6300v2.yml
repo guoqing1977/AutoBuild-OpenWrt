@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_youku
+name: Build_OP_netgear_r6300v2.yml
 
 on: 
   release:
