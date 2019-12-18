@@ -70,7 +70,7 @@ jobs:
         ./scripts/feeds install -a
     - name: Configuration Customization - Build_netgear-r6300-v2
       env:
-        CONFIG_FILE: 'youku.config'
+        CONFIG_FILE: 'netgear-r6300-v2.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
