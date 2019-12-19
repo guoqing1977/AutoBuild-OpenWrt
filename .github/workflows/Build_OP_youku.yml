@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_youku
+name: Build_youku_16M
 
 on: 
   release:
@@ -68,9 +68,9 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
-    - name: Configuration Customization - Build_youku
+    - name: Configuration Customization - Build_youku_16M
       env:
-        CONFIG_FILE: 'youku.config'
+        CONFIG_FILE: 'youku_16M.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
