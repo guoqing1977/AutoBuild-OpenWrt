@@ -92,4 +92,3 @@ jobs:
       with:
         name: OpenWrt
         path: openwrt/bin
-© 2019 GitHub, Inc.
