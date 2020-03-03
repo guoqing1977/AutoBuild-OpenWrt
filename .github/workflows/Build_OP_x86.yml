@@ -5,15 +5,15 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_x86 
+name: Build_x86
 
 on: 
   release:
     types: [published]
 
-  push:
-    branches: 
-      - master
+  #push:
+  #  branches: 
+  #    - master
 
   #schedule:
   #  - cron: 0 8 * * 5
@@ -69,6 +69,12 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
+
+    #- name: Import external feeds
+    #  working-directory: ./openwrt
+    #  run: |
+    #    git clone https://github.com/Lienol/openwrt-package package/lienol
+    #    git clone "your_github_link" package/"your_folder_name"      
 
     - name: Configuration Customization - Build_x86
       env:
